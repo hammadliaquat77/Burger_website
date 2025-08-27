@@ -8,11 +8,11 @@ import Header from '../components/Header'
 
 function Home() {
   return (
-    <div className='min-h-screen w-full bg-[#12372A]'>
+    <section className='min-h-screen w-full bg-[#12372A]  border-b-2 border-[#415F55] '>
         <Header />
         <div className='flex flex-col h-full w-[85%] mx-auto'>
             {/* section 1 */}
-            <div className='flex flex-col md:flex-row justify-between items-center mb-10 md:mb-0'> 
+            <div className='flex flex-col md:flex-row justify-between items-center'> 
                 <div className='text-white text-center'>
                     <h3 className='md:text-4xl text-xl text-gray-300 text-center font-bold md:tracking-[6px] tracking-[3px]'>The Ultimate</h3>
                     <h1 className='md:text-7xl text-3xl mb-2 text-center font-extrabold md:tracking-[6px] tracking-[3px] font-serif'>Burger Club</h1>
@@ -39,7 +39,7 @@ function Home() {
             </div>
 
         </div>
-    </div>
+    </section>
   )
 }
 

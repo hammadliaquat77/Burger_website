@@ -16,7 +16,7 @@ import menu_wings from "../assets/menu_images/wings.png"
 
 function Menu() {
   return (
-    <div className='min-h-screen w-full bg-[#12372A] overflow-hidden'>
+    <section className='min-h-screen w-full bg-[#12372A] overflow-hidden pt-12 md:pt-0 border-b-2 border-[#415F55]'>
         <div className='relative'>
             <div className='flex'>
                 <img className='h-[250px] top-[50px] left-[200px] absolute' src={bg_burger} alt="" />
@@ -34,9 +34,9 @@ function Menu() {
         </div>
 
         {/* menu */}
-        <div className='flex flex-col justify-center items-center min-h-screen mb-20 md:mb-0'>
+        <div className='flex flex-col justify-center items-center min-h-screen mb-10 md:mb-0'>
                 <h1 className='text-3xl font-bold text-white mb-6'>Menu</h1>
-            <div className='md:flex md:flex-col md:gap-8 grid grid-cols-2 gap-4 mt-5'>
+            <div className='md:flex md:flex-col md:gap-8 grid grid-cols-2 gap-4 mt-14'>
 
             <div className='md:flex md:gap-4 space-y-4'>
                 <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
@@ -77,7 +77,7 @@ function Menu() {
             </div>
           </div>
         </div>
-    </div>
+    </section>
   )
 }
 

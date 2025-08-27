@@ -1,8 +1,8 @@
 
 import './App.css'
-// import Welcome from './pages/welcome'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
+import Shop from './pages/Shop'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
      {/* <Welcome /> */}
      <Home />
      <Menu/>
+     <Shop/>
     </>
   )
 }
