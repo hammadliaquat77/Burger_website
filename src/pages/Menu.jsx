@@ -14,7 +14,18 @@ import menu_sides from "../assets/menu_images/sides.png"
 import menu_Tea from "../assets/menu_images/Tea.png"
 import menu_wings from "../assets/menu_images/wings.png"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Menu() {
+
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true,
+    });
+  
+
   return (
     <section id='menu' className='min-h-screen w-full bg-[#12372A] overflow-hidden pt-12 md:pt-0 border-b-2 border-[#415F55]'>
       <div className='relative'>
@@ -39,38 +50,38 @@ function Menu() {
         <div className='md:flex md:flex-col md:gap-8 grid grid-cols-2 gap-4 mt-14'>
 
           <div className='md:flex md:gap-4 space-y-4'>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-right" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[100px] object-cover' src={menu_wings} alt="wings" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>New In the club</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-right" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[110px] object-cover' src={menu_burger} alt="burger" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>BURGER</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-right" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[200px] object-cover' src={menu_sides} alt="Sides" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>SIDES</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-right" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[130px] object-cover' src={menu_fries} alt="Sides" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>Fries</span>
             </div>
           </div>
 
           <div className='md:flex md:gap-4 space-y-4'>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-left" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[100px] object-cover' src={menu_Tea} alt="wings" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>New In the club</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-left" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[120px] object-cover' src={menu_deal} alt="wings" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>New In the club</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-left" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[120px] object-cover' src={menu_roll} alt="wings" />
               <span className='text-[12px] tracking-tighter font-mono text-white'>New In the club</span>
             </div>
-            <div className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
+            <div data-aos="fade-left" className='bg-[#415F55] h-[150px] w-[130px] rounded-xl flex justify-center items-center flex-col'>
               <img className='w-[100px] object-cover' src={menu_salid} alt="wings" />
               <span className='text-[12px] tracking-tighter font-mono text-white -mt-4'>New In the club</span>
             </div>

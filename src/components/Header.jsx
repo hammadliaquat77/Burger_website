@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // icons
 import { Link } from "react-scroll";
+import { motion } from "motion/react"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,12 @@ export default function Header() {
     // <nav className=" text-white p-4 md:w-[60%] mb-20 md:mb-0 bg-[#12372A] md:fixed z-50">  
     <nav className="fixed top-0 left-0 w-full text-white p-4 md:w-[60%] bg-[#12372A] z-50 md:left-1/2 md:translate-x-[-50%]">
       <div className="flex justify-between items-center">
-        <h1 className='md:text-4xl text-2xl font-bold tracking-[5px] font-poppins md:ml-5'>BURGUR</h1>
+        <motion.div
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{ repeat: Infinity, duration: 1 }}
+        >
+          <h1 className='md:text-4xl text-2xl font-bold tracking-[5px] font-poppins md:ml-5'>BURGUR</h1>
+        </motion.div>
 
 
         {/* Desktop Menu */}
