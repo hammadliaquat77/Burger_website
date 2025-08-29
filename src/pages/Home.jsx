@@ -24,7 +24,7 @@ function Home() {
             <Header />
             <div className='flex flex-col h-full w-[85%] mx-auto pt-20'>
                 {/* section 1 */}
-                <div className='flex flex-col md:flex-row justify-between items-center'>
+                <div className='flex flex-col md:flex-row justify-between items-center pt-20'>
                     <div data-aos="fade-down" className='text-white text-center'>
                         <h3 data-aos="fade-down" className='md:text-4xl text-xl text-gray-300 text-center font-bold md:tracking-[6px] tracking-[3px]'>The Ultimate</h3>
                         <h1 data-aos="fade-down" className='md:text-7xl text-3xl mb-2 text-center font-extrabold md:tracking-[6px] tracking-[3px] font-serif'>Burger Club</h1>

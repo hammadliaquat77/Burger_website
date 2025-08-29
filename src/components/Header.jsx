@@ -70,7 +70,7 @@ export default function Header() {
           </li>
         </ul>
 
-        {/* Mobile Icon */}
+
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
